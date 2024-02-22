@@ -1,0 +1,56 @@
+@startuml Pow
+
+class Pow
+class Moneda
+
+Class Juegos
+class JuegoPelota
+class Pelota
+class JuegoCarro
+class Carro
+
+Pow --o Juegos
+Juegos --> JuegoPelota
+JuegoPelota --* Pelota
+Juegos --> JuegoCarro
+Carro *-- JuegoCarro
+Juegos --* Moneda
+
+class Alimentos
+class Bebida
+class Comida
+class Agua
+class Leche
+class Fruta
+class Carne
+
+Pow --o Alimentos
+Alimentos --* Comida
+Alimentos --* Bebida
+Alimentos --o Moneda
+Bebida --* Agua
+Bebida --* Leche
+Comida --* Fruta
+Comida --* Carne
+
+class Medicina
+class Posiones
+class PosionEnergia
+class PosionSalud
+
+Pow --o Medicina
+Medicina --* Posiones
+Posiones --* PosionEnergia
+Posiones --* PosionSalud
+Medicina --o Moneda
+
+class Closed
+class Ropa
+class Accesorio
+
+Pow --o Closed
+Closed --* Ropa
+Closed --* Accesorio
+Closed --o Moneda
+
+@enduml
