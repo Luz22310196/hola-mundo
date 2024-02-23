@@ -1,0 +1,14 @@
+@startual Pow
+
+class Mascota ( 
+    - vida : int
+    + comer (alimento:Alimento)
+)
+class Alimento(
+    - energia : int
+    + ExtraerEnergia()
+)
+Mascota o-- Alimentos
+
+
+@enduml
