@@ -1,9 +1,23 @@
 #include <iostream>
+#include <Alimentos.hpp>
+#include <Mascota.hpp>
 using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    cout << "Hola"
-         << "22310196" << endl;
+    Mascota firulais, mascota;
+    Alimentos carne(10);
+
+    firulais.Comer(carne);
+   
+   firulais.jugar();
+   firulais.jugar():
+   firulais.jugar();
+
+   cout
+   <<"vida de firulais"
+   <<firulais.Leervida()
+   <<endl;
+   
     return 0;
 }
