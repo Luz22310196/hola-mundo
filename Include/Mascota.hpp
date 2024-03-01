@@ -8,12 +8,11 @@ public:
     Mascota(){
         this->vida =0;
     }
-    Mascota(){}
     void comer (Alimentos alimento){
-        vida += alimento.ExtraerEnergia()
+        vida += alimento.ExtraerEnergia();
     }
     void jugar(){
-        this->vida -- 2;
+        this->vida -= 2;
     }
     int Leervida(){
         return this->vida; 
